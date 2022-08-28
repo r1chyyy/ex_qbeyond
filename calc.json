@@ -1,8 +1,8 @@
 {
     "input1": 2,
-    /* accept any number */
+    "commment":"accept any number",
     "input2": 3,
-    /* accept any number */
+    "commment":"accept any number",
     "operator":"+",
-    /* options here: "+", "-", "*", "/" */
+    "comment":"options here: '+','-','*','/' "
   }
