@@ -64,7 +64,7 @@ Please type Y for YES or N for NO.
 calculate()
 
 with open("calc.json","w") as write_file:  
-    json.dump(student,write_file)  
+    json.dump(uzd,write_file)  
   
 with open("calc.json", "r") as read_file:  
     b = json.load(read_file)  
