@@ -63,10 +63,9 @@ Please type Y for YES or N for NO.
 
 calculate()
 
-data = json.loads(uzd)
-
-unformatted_json = json.dumps(uzd)
-print(unformatted_json)  
-
-
-#    file.write(jsonResponse)
+with open("calc.json","w") as write_file:  
+    json.dump(student,write_file)  
+  
+with open("calc.json", "r") as read_file:  
+    b = json.load(read_file)  
+print(b)  
