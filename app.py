@@ -22,7 +22,7 @@ def calculate(input1, input2, operator):
         return formatRes(input1 + input2)
 
     elif operator == '-':
-        return formatRes(input1 + input2)
+        return formatRes(input1 - input2)
 
     elif operator == '*':
         return formatRes(input1 * input2)
@@ -42,11 +42,12 @@ def formatRes(res):
 @expects_json(schema)
 def ReturnJSON():
     if(request.method == 'GET'):
+        print('res')
         data = request.json
         res = calculate(data['input1'], data['input2'], data['operator'])
+        print('res 2')
         return res
 
   
 if __name__=='__main__':
-    # app.run(debug=True)
-    app.run(threaded=True, port=5000)
+    app.run(debug=True)
