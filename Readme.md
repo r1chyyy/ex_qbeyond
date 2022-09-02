@@ -1,7 +1,8 @@
 # Qbeyond Uzdevums
+Hosted on heroku with automatic deployment.
 
 ### Getting started
-    1.Create a virtual Environment
+    1.Create a virtual Environment `python3 venv env`
     2.Start the virtual env. `source env/bin/activate`
     3.Install packages by running `pip install -r requirements.txt`
     4.Run the app with `python3 ./app.py`
