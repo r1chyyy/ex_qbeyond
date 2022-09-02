@@ -9,5 +9,12 @@
 ### Saving libraries
 write `pip freeze > requirements.txt` to save libraries for package manager use.
 
+### Request Example
 
-
+`
+{
+  "input1": 3,
+  "input2": 3,
+  "operator":"/"
+}
+`

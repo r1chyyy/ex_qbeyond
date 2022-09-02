@@ -47,7 +47,8 @@ def ReturnJSON():
         res = calculate(data['input1'], data['input2'], data['operator'])
         return res
 
-  
+# Auto running app and server
 if __name__=='__main__':
+    # Enforcing port
     port = int(os.environ.get('PORT', 6000))
     app.run(host='0.0.0.0', port=port, debug=True)
