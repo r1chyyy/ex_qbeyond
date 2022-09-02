@@ -43,10 +43,8 @@ def formatRes(res):
 @expects_json(schema)
 def ReturnJSON():
     if(request.method == 'GET'):
-        print('res')
         data = request.json
         res = calculate(data['input1'], data['input2'], data['operator'])
-        print('res 2')
         return res
 
   
