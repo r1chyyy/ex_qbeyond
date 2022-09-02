@@ -1,5 +1,6 @@
 from flask import Flask,request,g,Response, jsonify
 from flask_expects_json import expects_json
+import os
 
 # Creates api app
 app =   Flask(__name__)
@@ -50,4 +51,5 @@ def ReturnJSON():
 
   
 if __name__=='__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 6000))
+    app.run(host='0.0.0.0', port=port, debug=True)
